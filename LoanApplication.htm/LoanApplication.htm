@@ -1,0 +1,157 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Form vay tiền</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.panel{
+				width: 60%;
+				margin: 0 auto;
+			}
+			.top{
+				text-align: left;
+				background-color:#fadee9; color: black
+				
+			}
+			.panel1{ 
+				margin-right: 15px;
+				background-color: #fadee9;
+				padding: 5px;
+				color: black;
+				border: 1px;
+			}
+			.panel2{
+				margin-right: 15px;
+				background-color: #fadee9;
+				padding: 5px;
+				color: black;
+				border: 1px;
+			}
+			.panel3{
+				background-color: #fadee9;
+				padding: 5px;
+				color: black;
+				border: 1px;
+			}
+			h4 {
+				color: blue;
+			}
+			input{
+				width: 200%;
+			}
+			body{
+				margin-left: 30px;
+			}
+			select{
+				margin-left: 35px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div class="panel"> -->
+			<div class="top">
+				<p><h3> Loan Application Form </h3></p>
+			</div>
+			<div class="panel1">
+				<h4> Applicant's Personal Information </h4>
+				<table>
+					<tr>
+						<td>Full Name:</td>
+						<td><input type="text" name="Full Name"></td>
+					</tr>
+					<tr>
+						<td>Date of Birth(MM/dd/yyyy):</td>
+						<td><input type="Date" name="Date of Birth(MM/dd/yyyy)"></td>
+					</tr>
+					<tr>
+						<td>Phone Number:</td>
+						<td><input type="number" name="Phone Number"></td>
+					</tr>
+					<tr>
+						<td>Address:</td>
+						<td><input type="text" name="Address"></td>
+					</tr>
+					<tr>
+						<td>ZIP Code:</td>
+						<td><input type="number" name="ZIP Code"></td>
+					</tr>
+				</table>
+			</div>
+			<!-- </div> -->
+			<br>
+
+			<div class="panel2">
+				<h4> Applicant's Employment Information </h4>
+				<table>
+					<tr>
+						<td> Current Emloyer:</td>
+						<td><input type="text" name=" Current Emloyer"></td>
+					</tr>
+					<tr>
+						<td> Employer Address:</td>
+						<td><input type="text" name=" Employer Address"></td>
+					</tr>
+					<tr>
+						<td> Date of joining(MM/dd/yyyy): </td>
+						<td><input type="Date" name=" Date of joining(MM/dd/yyyy)"></td>
+					</tr>
+					<tr>
+						<td> Phone Number:</td>
+						<td><input type="Number" name="Phone Number"></td>
+					</tr>
+					<tr>
+						<td> E-mail ID:</td>
+						<td><input type="text" name="  E-mail ID"></td>
+					</tr>
+					<tr>
+						<td>Fax:</td>
+						<td><input type="text" name=" Fax"></td>
+					</tr>
+					<tr>
+						<td> Designation: </td>
+						<td><input type="text" name=" Designation"></td>
+					</tr>
+					<tr>
+						<td>Annual Incom($):</td>
+						<td><input type="Number" name="  Annual Incom($)"></td>
+					</tr>
+				</table>
+			</div>
+			<br>
+
+			<div class="panel3">
+				<h4> Loan Information </h4>
+				<table>
+					<tr>
+						<td>Loan Type:</td>
+						<td><input type="text" name="Loan Type"></td>
+					</tr>
+					<tr>
+						<td>Principal($):</td>
+						<td><input type="number" name=" Principal"></td>
+					</tr>
+					<tr>
+						<td> Period(Months):</td>
+						<td><input type="number" name="Period(Months)"></td>
+					</tr>
+					<tr>
+						<td>interest(%):</td>
+						<td><input type="text" name="interest(%)"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="panel3">
+				<label><td>Loan Type:</td></label>
+				<select style="width: 350px">
+						<option>Select</option>
+						<option>Personal Loan</option>
+						<option>Home Loan</option>
+						<option>Vehicle Loan</option>
+						<option>Business Loan</option>
+						<option>Education Loan</option>
+				</select>
+			</div>
+			<button onclick="Submit()"> Submit </button>
+			<button onclick="Reset()"> Reset </button>
+		</body>
+		</html>

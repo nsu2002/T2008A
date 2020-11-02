@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quản lý đăng ký đăng nhập</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div>
+		<form method="post" onsubmit="return save()">
+			<p>
+				<label> Tên: </label>
+				<input required type="text" name="tên" id="tên_form">
+			</p>
+			<p>
+				<label> Tuổi: </label>
+				<input required type="number" name="tuổi" id="tuổi_form">
+			</p>
+			<p>
+				<label> email: </label>
+				<input required type="email" name="email" id="email_form">
+			</p>
+			<button type="button" onclick="save()">Đăng ký</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function save(){
+			ten = document.getElementById('tên_form').value
+			tuoi = document.getElementById('tuổi_form').value
+			Email = document.getElementById('email_form').value
+
+			console.log(ten)
+			console.log(tuoi)
+			console.log(Email)
+
+			//Save => localstorage
+			localStorage.setItem('tên_db', ten)
+			localStorage.setItem('tuổi_db', tuoi)
+			localStorage.setItem('email_db', Email)
+
+				return false;
+			}
+	</script>
+</body>
+</html>

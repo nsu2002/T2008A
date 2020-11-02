@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Giai phuong trinh bac 2 </title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var x, y, z, delta;
+		var a = prompt('nhập giá trị của a', );
+		var b = prompt('nhập giá trị của b', );
+		var c = prompt('nhập giá trị của c', );
+		delta = b*b - 4*a*c;
+
+if (delta < 0 ){
+	document.write('ptvn', );
+}
+
+if (delta==0) {
+	var x = -b/(2*a);
+	document.write('ptc1n', );
+}else {
+	var x1=(-b+Math.sqrt(delta))/(2*a);
+	var x2= (-b-Math.sqrt(delta))/(2*a);
+	document.write('x1', );
+	document.write('x2', );
+}
+	</script>
+</body>
+</html>

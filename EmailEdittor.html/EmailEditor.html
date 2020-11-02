@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-mail Editor</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color: rgb(255,255,240);	 
+		}
+		div{
+			margin-left: 20%;
+		}
+		textarea{
+			scrollbar-3dlight-color:#C0C0C0;
+			scrollbar-shadow-color:silver;
+			scrollbar-arrow-color: black;
+			scrollbar-face-color: gray;
+		}
+		.imgHelp{
+			cursor: help;
+		}
+		.Emaileditor{
+			color: #FFFFDD
+		}
+		#main{
+			width: 400px;
+			background-color:#DDFFEE;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		#help{
+			position: relative;
+			width: 500px;
+			height: 420px;
+			padding-top:10px;
+			background-color:#cfc;
+			padding-left: 10px;
+			padding-right: 10px;
+			opacity: 0px;
+			background-color:#E4E7E7;
+			border-width: 2px solid;
+			color: #303030
+		}
+		.Close{
+			text-align: right;
+			color: blue;
+			cursor: hand;
+		}
+		ul{
+			list-style-image:bullet.jpg;
+			list-style-type: square;
+			list-style-position: inside;
+		}
+		.row{
+			width: 100%;
+			display: flex;
+		}
+		.col-md-4{
+			width: 33.33%;
+			float: left;
+			text-align: right;
+			padding-right: 10px;
+		}
+		.col-md-8{
+			 																																																																				
+		}
+	</style>
+}
+
+</head>
+<body>
+	<div id="main">
+		<h2> Compose e-mail message</h2>
+		<div></div>
+
+	
+</div>
+	<table border="1" cellpadding="5" cellspacing="5">
+		<thead>
+			<tr 
+			<th colspan="6" style="text-transform: uppercase;background-color: blue"> Compose e-mail message </tr>
+				<tr>
+					<th> To </th>
+					<br
+					<th> Form </th>
+					<br
+					<th> CC </th>
+					<br
+					<th> Subject </th>
+					<br
+					<th> Message </th>
+				</tr>
+		</thead>
+	</table>
+	<br>
+	<form>
+		<input autofocus="true" type="text" name="To" size="60" placeholder="enter To">
+		<input required="true" type="form" name=" form" size="60">
+		<input type="CC" name="CC" size="60">
+		<input type="subject" name="subject" size="60">
+		<input type="message" name="message" size="60">
+	</form>
+
+
+
+</body>
+</html>

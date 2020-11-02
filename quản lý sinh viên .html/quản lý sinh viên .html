@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quản lý sinh viên</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div>
+		<input type="text" name="fullname">
+		<input type="" name="">
+	</div>
+	<table border="1" cellpadding="3" cellspacing="3" style="text-align: center;">
+	<script type="text/javascript">
+		var student = [];
+		for(i = 0; i<20; i++){
+			fullname: '';
+			age: '';
+			address: '';
+			email: '';
+			SĐT: '';
+			console.log(student)
+			console.log(student.fullname)
+			console.log(student.address)
+			console.log(student.email)
+			console.log(student.SĐT)
+		}
+		document.write('<tr>');
+				document.write('<th>'+ 'STT' + '</th>')
+		        document.write('<th>'+ 'Ten' + '</th>')
+		        document.write('<th>'+ 'Tuoi' + '</th>')
+		        document.write('<th>'+ 'Dia chi' + '</th>')
+		        document.write('<th>'+ 'Email' + '</th>')
+		        document.write('<th>'+ 'SĐT' + '</th>')
+		        document.write('</tr>')
+		        for(i = 0; i < 20; i++){
+		        	document.write('<tr>');
+						document.write('<td>'+(i+1)+'</td>');
+						document.write('<td>'+student[i].name+'</td>');
+						document.write('<td>'+student[i].age+'</td>');
+						document.write('<td>'+student[i].address+'</td>');
+						document.write('<td>'+student[i].email+'</td>');
+						document.write('<td>' +student[i].sđt+'</td>');
+						document.write('<tr>');	
+					}
+					 document.write('</table>')
+			
+	</script>
+</table>
+
+</body>
+</html>

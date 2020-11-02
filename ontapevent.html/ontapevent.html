@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ôn tập event</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<div class="1">
+	<table border="1">
+		<tbody>
+			<thead>
+				<tr> 
+					<th style="background-color:#2585cf; color: white;"> giải phương trình bậc 1 </th>
+				</tr>
+					<form>
+						<button onclick="giátrịcủaA()" style="background-color: #22bd60; color: white;"> giá trị của A </button>
+						<button onclick="giátrịcủaB()" style="background-color: #22bd60; color: white;"> giá trị của B </button>
+						<button onclick="Kếtquả()" style="background-color: #22bd60; color: white;"> Kết quả </button>
+					</form>
+				</tr>
+			</thead>
+			<tbody id="giatriAlist">
+		</tbody>
+	</table>
+</div>
+<script type="text/javascript">
+	var a
+	function giatricủaA(){
+		a=prompt('giá trị của A', );
+	}
+	var b
+	function giatricủaB(){
+		b=prompt('giá trị của B', );
+	}
+	var tổng
+	function kếtquả (){	
+		 tổng = a + b
+		alert('kết quả' + tổng);
+	}
+</script>
+</body>
+</html>

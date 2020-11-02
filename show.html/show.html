@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>show</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div>
+		<form method="post" onsubmit="return save()">
+			<p>
+				<label> Tên: </label>
+				<input required type="text" name="tên" id="tên_form">
+			</p>
+			<p>
+				<label> Tuổi: </label>
+				<input required type="number" name="tuổi" id="tuổi_form">
+			</p>
+			<p>
+				<label> email: </label>
+				<input required type="email" name="email" id="email_form">
+			</p>
+			<button type="button" onclick="save()">Show</button>
+		</form>
+	</div>
+<script type="text/javascript">
+	function save(){
+		ten = localStorage.getItem('tên_db')
+		tuoi = localStorage.getItem('tuoi_db')
+		email = localStorage.getItem('email_db')
+
+		console.log(ten)
+		console.log(tuoi)
+		console.log(email)
+
+		document.getElementById('tên_form').value = ten
+		document.getElementById('tuổi_form').value = tuoi
+		document.getElementById('email_form').value = email
+
+	}
+</script>
+</body>
+</html>
