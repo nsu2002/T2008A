@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập 1</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<!-- https://fontawesome.com/icons?from=io -->
+</head>
+<body>
+	<div class="container">
+		<table class="table table-bordered">
+			<tbody>
+				<thead>
+					<tr class="table-primary">
+						<th colspan="3"> Giải Phương Trình Bậc 1 </th>
+					</tr>
+					<form>
+						<th><button  id="gta" type="button" class="btn btn-Giá Trị a" style="background-color: #30f036"> Giá Trị A </button></th>
+						<th><button id="gtb" type="button" class="btn btn-Giá Trị b" style="background-color:#30f036 "> Giá Trị B </button></th>
+						<th><button id="kq" type="button" class="btn btn-Kết Quả" style="background-color:#30f036;"> Kết Quả </button></th>
+					</form>
+				</thead>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript">
+		var a;
+		$('#gta').click(function(){
+			a=prompt("nhập số A")
+		})
+		var b;
+		$('#gtb').click(function(){
+			a=prompt("nhập số B")
+		})
+		var kq;
+		$('#kq').click(function(){
+				var kq = a + b;
+		alert("ket qua = "+ kq)
+		})
+
+	</script>
+
+</body>
+</html>
